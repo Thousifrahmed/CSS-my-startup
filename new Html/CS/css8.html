@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css sizing units </title>
+</head>
+<style>
+    .box {
+        border: 2px solid black;
+        width: 95vw;
+        margin: 23px auto;
+    }
+    .cont {
+        border: 2px solid red;
+        width: 95vh;
+        margin: 23px auto;
+        font-size: 23px;
+    }
+    .cont p {
+        font-size: 1.5em;
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Css sizing units</h1>
+        <ul>
+            <li>px fixed size</li>
+            <li>% percentage of parent element</li>
+            <li>em increases the font size which is inherited</li>
+            <li>rem increses the size of root of font-size</li>
+            <li>device-width vmax</li>
+            <li>mobile-height vmin</li>
+        </ul>
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+    <div class="cont">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam possimus maxime!</p>
+    </div>
+
+</body>
+</html>

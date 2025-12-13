@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 6 </title>
+</head>
+<style>
+    header {
+        background-color: lightgray;
+        padding: 20px;
+        position:sticky;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        cursor: pointer;
+        padding: 10px;
+        background-color: lightblue;
+    }
+    nav ul li img{
+        height: 40px;
+    }
+
+    nav ul li:hover {
+        background-color: orange;
+    }
+    nav ul li:nth-child(1){
+        margin-right: auto;
+        background-color: rgb(197, 237, 17);
+    }
+
+    .content {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .box {
+        border: 2px solid black;
+        background-color: rgb(155, 229, 254);
+        height: 10vh;
+        width: 10vw;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        color: rgb(68, 11, 255);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>ultrawebsite</li>
+                <li>products</li>
+                <li>pricings</li>
+                <li>resources</li>
+                <li>About us</li>
+                <li><img src="about-us.png" alt="About Us"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Welcome to UltraWebsite</h1>
+            <p>download and try any of our products</p>
+        </div>
+        <div class="box">
+            <p>download FOR MAC OR OS</p>
+        </div>
+    </main>
+</body>
+
+</html>

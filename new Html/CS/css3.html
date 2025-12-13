@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+</head>
+<style>
+/* class selectors */
+    .red {
+        color: red;
+    }
+    /* id selectors */
+    #green {
+        color: green;
+    }
+    /* child selector */
+    div > p {
+        font-size: 18px;
+        color: blue;
+    }
+    /* universal selector */
+    * {
+        font-family: Arial, sans-serif;
+    }
+    /* pseudo selector */
+    a:hover {
+        color: red;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:active {
+        color: orange;
+    }
+    p:first-child {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <main>
+        <p>first </p>
+        <p>second</p>
+    </main>
+    <div>
+        <h1>CSS Selectors</h1>
+        <h2>1. Element Selector</h2>
+        <p>This selector targets all instances of a specific HTML element.</p>
+    </div>
+    <h2 class="red">2. Class Selector</h2>
+    <p>This selector targets elements with a specific class attribute.</p>
+    <h2  id="green">3. ID Selector</h2>
+    <p>This selector targets a unique element with a specific ID.</p>
+    <a href="https://www.google.com">go to google</a>
+</body>
+</html>

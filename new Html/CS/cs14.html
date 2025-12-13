@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+</head>
+<style>
+    :root {
+        --main-bg-color: #3498db;
+        --nav-bg-color: #2c3e50;
+        --nav-text-color: #ecf0f1;
+        --container-padding: 20px;
+        --font-family: 'Arial, sans-serif';
+    }
+    body {
+        font-family: var(--font-family);
+        background-color: var(--main-bg-color);
+        margin: 0;
+        padding: 0;
+    }
+    .nav {
+        background-color: var(--nav-bg-color);
+        color: var(--nav-text-color);
+        padding: 10px;
+    }
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 16px;
+    }
+    .container {
+        padding: var(--container-padding);
+        background-color: #ffffff;
+        margin: 20px;
+        border-radius: 8px;
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>CSS Variables</h1>
+        <p>CSS variables, also known as CSS custom properties, allow you to store values that can be reused throughout your CSS. They are defined using the -- prefix and can be accessed using the var() function.</p>
+        <h2>Defining CSS Variables</h2>
+        <pre><code>:root {
+    --main-bg-color: #3498db;   
+    </div>
+</body>
+</html>

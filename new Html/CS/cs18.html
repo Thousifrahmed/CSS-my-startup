@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+</head>
+<style>
+.container {
+    height: 90vh;
+    width: auto;
+    display: flex;
+    border: 2px solid red;
+    /* justify-content: center; */
+    /* row-gap: 40px; */
+    /* column-gap: 40px; */
+    /* align-items: center; */
+    /* flex-flow: column wrap-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* align-content is used when multiple lines */
+}
+.item{
+    /* flex-grow: 1; */
+    border: 2px solid black;
+    height: 92px;
+    width: 92px;
+    margin: 10px;
+    background-color: lightblue;
+    /* order-property*/
+}
+/* .item1{
+    flex-grow: 2;
+} */
+
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
+}
+</style>
+<body>
+    
+
+    <main>
+        <div class="container">
+            <div class="item order1">1</div>
+            <div class="item order3">2</div>
+            <div class="item order2">3</div>
+            <div class="item item1">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
