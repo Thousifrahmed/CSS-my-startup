@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+</head>
+<style>
+    .container{
+        background-color: lightgreen;
+        height: 70vh;
+        width: 50vw;
+    }
+    .box {
+        background-color: lightcoral;
+        height: 7vh;
+        width: 5vw;
+        margin: 10px;
+        padding: 20px;
+        transform: translateX(10vh) translateY(10vh);
+    }
+    .transition {
+        transition: transform, background-color 2s cubic-bezier(0.59, 0.6, 0, 1.01) 1s;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box transition">
+        </div>
+    </div>
+</body>
+</html>
