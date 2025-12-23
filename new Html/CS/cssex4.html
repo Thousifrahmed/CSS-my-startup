@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple blog page</title>
+</head>
+<style>
+    body, html{
+        background-color: lightgrey;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        background-color:#231942;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .date{
+        font-size: 14px;
+        color: #ccc;
+        text-align: end;
+    }
+    section{
+        flex: 1;
+        background-color: #8e5cb9;
+        color: white;
+        margin: 20px auto;
+    }
+    footer{
+        background-color: #231942;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <h1>Simple Blog Page</h1>
+        <p class="date">date: 2024-06-15</p>
+    </header>
+    <section>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet unde necessitatibus vitae fuga, aspernatur
+            repudiandae soluta porro dicta et. Minus odio nisi provident obcaecati tempora, possimus recusandae, dolore
+            iusto animi ducimus nesciunt omnis explicabo eaque.
+        </p>
+    </section>
+    <footer>
+        <p>Author: Thousif Ahmed R</p>
+        <p>&copy; 2024 Simple Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
