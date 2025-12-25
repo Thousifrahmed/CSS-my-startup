@@ -1,8 +1,96 @@
-div:first-child p:first-child {
-    color: red;
-    background-color: yellow;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-div > p {
-    color: white;
-    background-color: blue;
+
+body {
+  background: #f2f2f2;
+  padding: 20px;
 }
+
+.resume {
+  background: #ffffff;
+  max-width: 850px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.header h3 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* Sections */
+.section {
+  margin-top: 25px;
+}
+
+.section h2 {
+  background: #eaeaea;
+  padding: 6px 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Education rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.right {
+  font-weight: bold;
+}
+
+/* Lists */
+ul {
+  margin: 10px 0 0 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 14px;
+}
+@media print {
+  body {
+    background: none;
+  }
+
+  .resume {
+    border: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+
